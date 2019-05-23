@@ -31,7 +31,7 @@ class paneel extends JPanel {
 		JLabel newsAppLabel = new JLabel("NewsApp");
 		newsAppLabel.setHorizontalAlignment(JLabel.CENTER);
 		// Voeg de componenten toe aan het paneel
-		//yeet
+		//yeettest
 		add(newsAppLabel, BorderLayout.NORTH);
 		
 	}
