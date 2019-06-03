@@ -9,17 +9,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-/*
- * More info:
- * https://newsapi.org/docs/get-started
- * https://www.baeldung.com/java-http-request API
- */
-
-/**
- * 
- * @author drewes
- *
- */
 public abstract class AbstractNewsApiFeed {
 
 	public static final String SRC = "https://newsapi.org/v2/top-headlines";
@@ -28,10 +17,6 @@ public abstract class AbstractNewsApiFeed {
 	protected Map<String, String> parameters;
 	protected URL url;
 
-	
-	/**
-	 * Default no-args constructor.
-	 */
 	public AbstractNewsApiFeed() {
 		parameters = new HashMap<>();
 		if (!APIKEY.isEmpty()) {
@@ -39,10 +24,6 @@ public abstract class AbstractNewsApiFeed {
 		}
 	}
 
-	/**
-	 * Setter for the url. Generates a url with the SRC, API key and set
-	 * paramters.
-	 */
 	public void setUrl() {
 		try {
 			url = new URL(SRC + "?" + ParameterStringBuilder.getParamsString(parameters));
@@ -53,25 +34,15 @@ public abstract class AbstractNewsApiFeed {
 		}
 	}
 
-	/**
-	 * Returns the url with paramaeters as a string.
-	 * @return url.
-	 */
 	public String getUrl() {
 		return url.toString();
 	}
 
-	/**
-	 * Request the api.
-	 * @return the json response.
-	 */
 	public String request() {
 		String json = "";
 
-		// Set url
 		setUrl();
 
-		// Request URL
 		try {
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();
 			con.setRequestMethod("GET");
@@ -103,12 +74,6 @@ public abstract class AbstractNewsApiFeed {
 
 	}
 
-	/**
-	 * Add get parameters to a collection
-	 * 
-	 * @param key
-	 * @param value
-	 */
 	public void setParameter(String key, String value) {
 		parameters.put(key, value);
 	}
