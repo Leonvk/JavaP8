@@ -1,15 +1,18 @@
 package reader;
 
+import javax.swing.JPanel;
+
 import api.NewsApiParser;
 import article.ArticleContainer;
 
-public class ReaderController {
+public class ReaderController extends JPanel {
 	
 	private MyNewsApiFeed feed;
 	
-	private ArticleListView view;
+	private ArticlelistView view;
 	
 	public ReaderController() {
+		
 		feed = new MyNewsApiFeed();
 		String json = feed.request();
 		System.out.println(json);
@@ -17,7 +20,5 @@ public class ReaderController {
 		
 		view = new ArticleListView(container.getArticles());
 		add(view);
-		
 	}
-
 }
