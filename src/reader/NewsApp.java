@@ -1,4 +1,4 @@
-import java.awt.BorderLayout;
+package reader;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -24,7 +24,7 @@ class paneel extends JPanel {
 	public paneel() {
 		setLayout(null);
 		// Maak de tekstvakken
-		
+
 		// maak knop
 		JButton categorie1 = new JButton("categorie1");
 		categorie1.setBounds(920, 200, 100, 40);
@@ -53,7 +53,7 @@ class paneel extends JPanel {
 		add(categorie4);
 		add(categorie5);
 		add(categorie6);
-		
+
 	}
 
 }
