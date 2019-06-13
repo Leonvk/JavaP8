@@ -9,7 +9,7 @@ public class ReaderController extends JPanel {
 	
 	private MyNewsApiFeed feed;
 	
-	private ArticlelistView view;
+	private ArticleListView view;
 	
 	public ReaderController() {
 		
