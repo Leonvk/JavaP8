@@ -14,8 +14,6 @@ import article.ArticleContainer;
 public class NewsApiParser {
 
 	public static ArticleContainer parseJson(String json) {
-		Gson gson =  ((Gson) new GsonBuilder().create());
-		ArticleContainer container = gson.fromJson(json, ArticleContainer.class);
-		return container;
+		return ((Gson) new GsonBuilder().create()).fromJson(json, ArticleContainer.class);
 	}
 }

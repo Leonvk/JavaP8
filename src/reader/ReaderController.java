@@ -2,6 +2,7 @@ package reader;
 
 import javax.swing.JPanel;
 
+import api.MyNewsApiFeed;
 import api.NewsApiParser;
 import article.ArticleContainer;
 

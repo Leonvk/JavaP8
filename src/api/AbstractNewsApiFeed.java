@@ -22,6 +22,7 @@ public abstract class AbstractNewsApiFeed {
 		if (!APIKEY.isEmpty()) {
 			setParameter("apiKey", APIKEY);
 		}
+		setParameter("q", "Sport");
 	}
 
 	public void setUrl() {
