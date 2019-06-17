@@ -27,17 +27,17 @@ class paneel extends JPanel {
 		// Maak de tekstvakken
 
 		// maak knop
-		JButton categorie1 = new JButton("categorie1");
+		JButton categorie1 = new JButton("Voetbal");
 		categorie1.setBounds(920, 200, 100, 40);
-		JButton categorie2 = new JButton("categorie2");
+		JButton categorie2 = new JButton("Tennis");
 		categorie2.setBounds(1020, 200, 100, 40);
-		JButton categorie3 = new JButton("categorie3");
+		JButton categorie3 = new JButton("Sport Vissen");
 		categorie3.setBounds(920, 240, 100, 40);
-		JButton categorie4 = new JButton("categorie4");
+		JButton categorie4 = new JButton("Golf");
 		categorie4.setBounds(1020, 240, 100, 40);
-		JButton categorie5 = new JButton("categorie5");
+		JButton categorie5 = new JButton("Gymnastiek");
 		categorie5.setBounds(920, 280, 100, 40);
-		JButton categorie6 = new JButton("categorie6");
+		JButton categorie6 = new JButton("Hockey");
 		categorie6.setBounds(1020, 280, 100, 40);
 		// Maak de labels
 		JLabel newsAppLabel = new JLabel("NewsApp");
