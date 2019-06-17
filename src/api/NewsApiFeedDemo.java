@@ -8,13 +8,7 @@ import java.util.Scanner;
  * https://newsapi.org/docs/get-started
  * https://www.baeldung.com/java-http-request API
  */
-
-/**
- * 
- * @author drewes
- *
- */
-public class NewsApiFeedDemo extends AbstractNewsApiFeed {
+class NewsApiFeedDemo extends AbstractNewsApiFeed {
 
 	public static final String SRC = "demo-data/top-headlines.json";
 
@@ -22,7 +16,7 @@ public class NewsApiFeedDemo extends AbstractNewsApiFeed {
 	public String getUrl() {
 		return "Demodata";
 	}
-	
+
 	@Override
 	public String request() {
 		String json = "";
@@ -36,5 +30,7 @@ public class NewsApiFeedDemo extends AbstractNewsApiFeed {
 			System.out.println("Error while reading file: " + e.getMessage());
 		}
 		return json;
+
 	}
+
 }
