@@ -1,6 +1,7 @@
 package api;
 
 
+import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import article.ArticleContainer;
@@ -19,6 +20,8 @@ import article.ArticleContainer;
 public class NewsApiParser {
 
 	public static ArticleContainer parseJson(String json) {
-		return (ArticleContainer) new GsonBuilder().create().fromJSON(json, ArticleContainer.class);
+		Gson gson =  ((Gson) new GsonBuilder().create());
+		ArticleContainer container = gson.fromJson(json, ArticleContainer.class);
+		return container;
 	}
 }
