@@ -12,7 +12,7 @@ import java.util.Scanner;
 public abstract class AbstractNewsApiFeed {
 
 	public static final String SRC = "https://newsapi.org/v2/top-headlines";
-	public static String APIKEY = "";
+	public static String APIKEY = "4985ad8292d24e61a6a19f34292e6240";
 
 	protected Map<String, String> parameters;
 	protected URL url;

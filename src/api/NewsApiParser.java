@@ -1,6 +1,5 @@
 package api;
 
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -12,11 +11,6 @@ import article.ArticleContainer;
  * https://www.baeldung.com/gson-deserialization-guide
  */
 
-/**
- * 
- * @author drewes
- *
- */
 public class NewsApiParser {
 
 	public static ArticleContainer parseJson(String json) {
