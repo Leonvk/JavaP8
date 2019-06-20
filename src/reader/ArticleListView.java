@@ -7,7 +7,7 @@ import javax.swing.JPanel;
 import article.Article;
 
 public class ArticleListView extends JPanel {
-
+	
 public ArticleListView(List<Article> articles) {
 		
 		for (Article article : articles) {
