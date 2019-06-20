@@ -15,7 +15,7 @@ public class NewsApp {
 		frame.setSize(1200, 900);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setTitle("NewsApp");
-		frame.setContentPane(new paneel());
+		frame.setContentPane(new ReaderController());
 		frame.setVisible(true);
 
 	}

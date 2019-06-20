@@ -23,11 +23,8 @@ class KnoppenView extends JPanel {
 		JButton categorie5 = new JButton("Gymnastiek");
 		JButton categorie6 = new JButton("Hockey");
 		// Maak de labels
-		JLabel newsAppLabel = new JLabel("NewsApp");
-		newsAppLabel.setHorizontalAlignment(JLabel.CENTER);
 		JLabel fav = new JLabel("Favorieten");
 		// Voeg de componenten toe aan het paneel
-		add(newsAppLabel);
 		add(fav);
 		add(categorie1);
 		add(categorie2);
