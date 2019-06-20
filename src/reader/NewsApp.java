@@ -15,7 +15,7 @@ public class NewsApp {
 		frame.setSize(1200, 900);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setTitle("NewsApp");
-		frame.setContentPane(new ReaderController());
+		frame.setContentPane(new paneel());
 		frame.setVisible(true);
 
 	}
@@ -25,8 +25,8 @@ public class NewsApp {
 //class paneel extends JPanel {
 //
 //	public paneel() {
-//		
-//		
+//
+//
 //		GridLayout experimentLayout = new GridLayout(0,2);
 //		setLayout(experimentLayout);
 //		// Maak de tekstvakken
