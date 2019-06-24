@@ -21,12 +21,12 @@ FlowLayout experimentLayout = new FlowLayout();
 		// Maak de tekstvakken
 
 		// maak knop
-		JButton categorie1 = new JButtons("Voetbal");
-		JButton categorie2 = new JButtons("Tennis");
-		JButton categorie3 = new JButtons("Sport Vissen");
-		JButton categorie4 = new JButtons("Golf");
-		JButton categorie5 = new JButtons("Gymnastiek");
-		JButton categorie6 = new JButtons("Hockey");
+		JButtons categorie1 = new JButtons("Voetbal");
+		JButtons categorie2 = new JButtons("Tennis");
+		JButtons categorie3 = new JButtons("Sport Vissen");
+		JButtons categorie4 = new JButtons("Golf");
+		JButtons categorie5 = new JButtons("Gymnastiek");
+		JButtons categorie6 = new JButtons("Hockey");
 
 		// Voeg de componenten toe aan het paneel
 
