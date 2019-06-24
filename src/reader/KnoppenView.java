@@ -2,14 +2,21 @@ package reader;
 
 import java.awt.FlowLayout;
 
+import java.awt.Font;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JPanel;
 
 class KnoppenView extends JPanel {
+private ReaderController controller;
+	public KnoppenView(ReaderController controller) {
 
-	public KnoppenView() {
+this.controller = controller;
 
-
-		FlowLayout experimentLayout = new FlowLayout();
+FlowLayout experimentLayout = new FlowLayout();
 		setLayout(experimentLayout);
 		// Maak de tekstvakken
 
@@ -22,6 +29,7 @@ class KnoppenView extends JPanel {
 		JButton categorie6 = new JButtons("Hockey");
 
 		// Voeg de componenten toe aan het paneel
+
 		add(categorie1);
 		add(categorie2);
 		add(categorie3);
