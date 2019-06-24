@@ -18,10 +18,9 @@ public class ReaderController extends JPanel {
 		BorderLayout layout = new BorderLayout();
 		this.setLayout(layout);
 
-		add(new KnoppenView( this ), BorderLayout.NORTH);
 //		add(new TitelView(), BorderLayout.NORTH);
 		add(new TitelView(), BorderLayout.NORTH);
-		add(new KnoppenView(), BorderLayout.CENTER);
+		add(new KnoppenView( this ), BorderLayout.CENTER);
 
 		feed = new MyNewsApiFeed();
 		String json = feed.request();
