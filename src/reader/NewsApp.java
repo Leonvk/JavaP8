@@ -24,6 +24,9 @@ class paneel extends JPanel {
 	public paneel() {
 		setLayout(null);
 
+		/**
+		 * JButtons
+		 */
 		JButton categorie1 = new JButton("Voetbal");
 		JButton categorie2 = new JButton("Tennis");
 		JButton categorie3 = new JButton("Sport Vissen");
