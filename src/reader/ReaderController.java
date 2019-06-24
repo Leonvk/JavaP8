@@ -13,12 +13,12 @@ public class ReaderController extends JPanel {
 	private MyNewsApiFeed feed;
 
 	private ArticleListView view;
-
+	
+	private BorderLayout layout;
 	public ReaderController() {
-		BorderLayout layout = new BorderLayout();
+		layout = new BorderLayout();
 		this.setLayout(layout);
 
-//		add(new TitelView(), BorderLayout.NORTH);
 		add(new TitelView(), BorderLayout.NORTH);
 		add(new KnoppenView( this ), BorderLayout.CENTER);
 
@@ -33,13 +33,16 @@ public class ReaderController extends JPanel {
 	
 	public void jurgen(String q) {
 		System.out.println("jurgen " + q);
+		this.remove(layout.getLayoutComponent(BorderLayout.CENTER));
+		
 		feed.setParameter("q", q);
 		String json = feed.request();
 		System.out.println(json);
 		ArticleContainer container = NewsApiParser.parseJson(json);
 		view = new ArticleListView(container.getArticles());
-		add(view, BorderLayout.CENTER);
-		repaint();
+		
+		this.add(view, BorderLayout.CENTER);
+		this.revalidate();
 	}
 	
 }
