@@ -1,14 +1,18 @@
 package reader;
 
-import javax.swing.JLabel;
+import java.awt.GridLayout;
 
-public class TitelView {
-	
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class TitelView extends JPanel {
+
 	public TitelView() {
-	
-	//labels
-	JLabel newsAppLabel = new JLabel("NewsApp");
-	newsAppLabel.setHorizontalAlignment(JLabel.CENTER);
-	add(newsAppLabel);
+
+		// labels
+		JLabel newsAppLabel = new JLabel("NewsApp");
+		newsAppLabel.setHorizontalAlignment(JLabel.CENTER);
+		add(newsAppLabel);
+
 	}
 }
