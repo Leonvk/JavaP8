@@ -26,6 +26,7 @@ class KnoppenView extends JPanel {
 		JLabel fav = new JLabel("Favorieten");
 		// Voeg de componenten toe aan het paneel
 		add(fav);
+		add(new JLabel(""));
 		add(categorie1);
 		add(categorie2);
 		add(categorie3);
