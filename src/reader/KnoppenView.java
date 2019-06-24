@@ -15,8 +15,8 @@ import javax.swing.JPanel;
 class KnoppenView extends JPanel {
 
 	public KnoppenView() {
-		
-		
+
+
 		FlowLayout experimentLayout = new FlowLayout();
 		setLayout(experimentLayout);
 		// Maak de tekstvakken

@@ -9,7 +9,7 @@ import article.Article;
 
 public class ArticleListView extends JPanel {
 
-	GridLayout experimentLayout = new GridLayout(0, 2);
+	GridLayout experimentLayout = new GridLayout(0, 1);
 
 	ArticleListView(){
 		System.out.println("articlelistview maken");
