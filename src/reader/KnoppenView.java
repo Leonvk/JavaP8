@@ -22,16 +22,14 @@ class KnoppenView extends JPanel {
 		// Maak de tekstvakken
 
 		// maak knop
-		JButton categorie1 = new JButtons("Voetbal");
-		JButton categorie2 = new JButtons("Tennis");
-		JButton categorie3 = new JButtons("Sport Vissen");
-		JButton categorie4 = new JButtons("Golf");
-		JButton categorie5 = new JButtons("Gymnastiek");
-		JButton categorie6 = new JButtons("Hockey");
-		// Maak de labels
-//		JLabel fav = new JLabel("Favorieten");
+		MooieKnop categorie1 = new MooieKnop("Voetbal");
+		MooieKnop categorie2 = new MooieKnop("Tennis");
+		MooieKnop categorie3 = new MooieKnop("Sport Vissen");
+		MooieKnop categorie4 = new MooieKnop("Golf");
+		MooieKnop categorie5 = new MooieKnop("Gymnastiek");
+		MooieKnop categorie6 = new MooieKnop("Hockey");
+
 		// Voeg de componenten toe aan het paneel
-//		add(fav);
 		add(categorie1);
 		add(categorie2);
 		add(categorie3);
