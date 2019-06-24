@@ -20,7 +20,7 @@ class KnoppenView extends JPanel {
 		MooieKnop categorie4 = new MooieKnop("Golf");
 		MooieKnop categorie5 = new MooieKnop("Gymnastiek");
 		MooieKnop categorie6 = new MooieKnop("Hockey");
-		
+
 		// Voeg de componenten toe aan het paneel
 		add(categorie1);
 		add(categorie2);
