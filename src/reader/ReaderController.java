@@ -18,7 +18,7 @@ public class ReaderController extends JPanel {
 		BorderLayout layout = new BorderLayout();
 		this.setLayout(layout);
 
-		add(new KnoppenView(), BorderLayout.NORTH);
+		add(new KnoppenView( this ), BorderLayout.NORTH);
 //		add(new TitelView(), BorderLayout.NORTH);
 
 		feed = new MyNewsApiFeed();
@@ -29,4 +29,16 @@ public class ReaderController extends JPanel {
 		add(view, BorderLayout.CENTER);
 
 	}
+	
+	public void jurgen(String q) {
+		System.out.println("jurgen " + q);
+		feed.setParameter("q", q);
+		String json = feed.request();
+		System.out.println(json);
+		ArticleContainer container = NewsApiParser.parseJson(json);
+		view = new ArticleListView(container.getArticles());
+		add(view, BorderLayout.CENTER);
+		repaint();
+	}
+	
 }

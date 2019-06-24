@@ -6,6 +6,8 @@ import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.GroupLayout;
 import javax.swing.JButton;
@@ -13,11 +15,12 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 class KnoppenView extends JPanel {
+private ReaderController controller;
+	public KnoppenView(ReaderController controller) {
 
-	public KnoppenView() {
+this.controller = controller;
 
-
-		FlowLayout experimentLayout = new FlowLayout();
+FlowLayout experimentLayout = new FlowLayout();
 		setLayout(experimentLayout);
 		// Maak de tekstvakken
 
@@ -32,10 +35,17 @@ class KnoppenView extends JPanel {
 		JButton categorie4 = new JButton("Golf");
 		JButton categorie5 = new JButton("Gymnastiek");
 		JButton categorie6 = new JButton("Hockey");
-		// Maak de labels
-//		JLabel fav = new JLabel("Favorieten");
-		// Voeg de componenten toe aan het paneel
-//		add(fav);
+		
+		categorie2.addActionListener( new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Hallo dit is alles van tennis");
+				controller.jurgen("tennis");
+			}
+			
+		});
+		
 		add(categorie1);
 		add(categorie2);
 		add(categorie3);
